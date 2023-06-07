@@ -6,7 +6,7 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.3",
+    "@mui/material": "^5.13.4",
     "@rematch/core": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,7 +16,9 @@
     "react-redux": "^8.0.7",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.1",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.0-rc.3",
     "web-vitals": "^2.1.4"
   },

@@ -4,16 +4,16 @@ import { mobile } from "../responsive";
 import { explore, graphic } from "./Graphic";
 import category from "../asset/image-category-1.png";
 import { hover } from "@testing-library/user-event/dist/hover";
-
+import "./Brand.css";
 const Brand = () => {
   const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: block;
     position: relative;
     overflow: hidden;
 
-    ${mobile({ display: "none" })}
+    ${mobile({ display: "block" })}
   `;
   const Wrapper = styled.div`
     margin-top: 80px;
@@ -22,7 +22,11 @@ const Brand = () => {
     height: 70px;
     display: flex;
 
-    ${mobile({ padding: "10px 0px" })}
+    ${mobile({
+      padding: "10px 0px",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+    })}
   `;
   const Graphic = styled.div`
     /* flex-direction: row;
@@ -32,8 +36,9 @@ const Brand = () => {
     gap: 80px; */
   `;
   const ImgContainer = styled.div`
-    width: 1320px;
+    width: 100%;
     height: 70px;
+    ${mobile({ padding: "10px 0px" })}
   `;
   const Image = styled.img`
     height: 100%;
@@ -48,10 +53,11 @@ const Brand = () => {
     padding: 10px 150px;
     display: flex;
     margin-top: 70px;
+    ${mobile({ padding: "130px 0px" })}
   `;
   const Left = styled.div`
     flex: 0.5;
-    background-color: red;
+
     color: wheat;
   `;
   const Right = styled.div`
@@ -89,6 +95,7 @@ const Brand = () => {
 
     /* right: 51px; */
     left: -85px;
+    ${mobile({ display: "none" })}
   `;
   return (
     <Container>
@@ -109,9 +116,18 @@ const Brand = () => {
         <Right>
           {explore.map((item) => {
             return (
-              <ExploreRight>
-                <Imagee src={item.img} />
-              </ExploreRight>
+              // <ExploreRight class="container">
+              //   <Imagee src={item.img} class="image" />
+              //   <div class="middle">
+              //     <div class="text">John Doe</div>
+              //   </div>
+              // </ExploreRight>
+              <div class="container">
+                <img src={item.img} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">John Doe</div>
+                </div>
+              </div>
             );
           })}
         </Right>

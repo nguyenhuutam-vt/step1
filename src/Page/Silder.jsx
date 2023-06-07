@@ -3,6 +3,8 @@ import { styled } from "styled-components";
 import { mobile } from "../responsive";
 import product from "../asset/image-product.png";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import "./Silder.css";
+import { mobilee } from "./rs";
 const Silder = () => {
   const Container = styled.div`
     width: 100%;
@@ -11,20 +13,19 @@ const Silder = () => {
     position: relative;
     overflow: hidden;
     background-color: #f0f0f0;
-    ${mobile({ display: "none" })}
+    ${mobile({ display: "block" })}
   `;
   const Wrapper = styled.div`
     height: 100%;
     padding: 10px 150px;
     display: flex;
-
-    transition: all 1.5s ease;
-    transform: translateX(${(props) => props.slideIndex * -100}vw);
+    ${mobile({ display: "block", padding: "10px 0px" })}
   `;
   const ImgContainer = styled.div`
     width: 442px;
     height: 562px;
     flex: 1;
+    ${mobile({ display: "none" })}
   `;
   const Slide = styled.div`
     width: 100vw;
@@ -53,6 +54,7 @@ const Silder = () => {
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
+    ${mobile({ fontSize: "55px" })}
   `;
   const Desc = styled.p`
     margin: 50px 0px;
@@ -86,7 +88,7 @@ const Silder = () => {
               You can explore ans shop many differnt collection from various
               barands here.
             </Desc>
-            <Button>
+            <Button className="btn">
               <LocalMallIcon /> SHOW NOW
             </Button>
           </InfoContainerr>

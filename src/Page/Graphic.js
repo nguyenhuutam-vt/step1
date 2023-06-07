@@ -15,7 +15,12 @@ import product4 from '../asset/image-product-4.png'
 import product5 from '../asset/image-product-6.png'
 import product6 from '../asset/image-product-5.png'
 import product7 from '../asset/image-product-7.png'
-
+import flw1 from '../asset/image-product-12.png'
+import flw2 from '../asset/image-product-8.png'
+import flw3 from '../asset/image-product-9.png'
+import flw4 from '../asset/image-product-10.png'
+import flw5 from '../asset/image-product-11.png'
+import flw6 from '../asset/image-product-13.png'
 export const graphic =[
     {
         id:1,
@@ -120,5 +125,28 @@ export const productL = [
         des:'Adicolor Classics Joggers',
         category:'Dress',
         price:'$63.85'
+    }
+]
+export const flow = [
+    {
+        id:1,
+        img : flw1
+    },
+    {
+        id:1,
+        img : flw2
+        
+    },
+    {
+        id:1, img : flw3
+    },
+    {
+        id:1, img : flw4
+    },
+    {
+        id:1, img : flw5
+    },
+    {
+        id:1, img : flw6
     }
 ]

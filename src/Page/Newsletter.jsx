@@ -11,6 +11,7 @@ const Newsletter = () => {
     display: block;
     position: relative;
     overflow: hidden;
+    ${mobile({ padding: "30px 20px", height: "100%" })}
   `;
 
   const Language = styled.div`
@@ -55,6 +56,7 @@ const Newsletter = () => {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 25px;
     row-gap: 110px;
+    ${mobile({ padding: "10px 0px", display: "block" })}
   `;
 
   const Filter = styled.div`
@@ -67,7 +69,8 @@ const Newsletter = () => {
   const ListP = styled.div`
     width: 312px;
     height: 400px;
-    background-color: red;
+
+    ${mobile({ padding: "40px 13px" })}
   `;
   const Image = styled.img`
     height: 100%;
