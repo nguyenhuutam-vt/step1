@@ -45,3 +45,46 @@ color: #1E2832
     display: grid;
     row-gap: 40px;
   }
+  .over{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+    
+    
+    color: #535353;
+  }
+  .toolbar{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search{
+    background-color: red;
+  }
+  .menu{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+  }
+  .icon{
+    color: black;
+   margin-top: 30px;
+  }
+  .circleBar{
+  width: 130px;
+  height: 130px;
+  }
+  .des{
+    width: 140px;
+    height: 16px;
+  }
+  .listCircle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 75px;
+    column-gap: 100px;
+    margin-top: 50px;
+  }

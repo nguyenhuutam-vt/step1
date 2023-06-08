@@ -4,11 +4,7 @@ import { mobile } from "../responsive";
 import SideBarr from "./SideBar";
 
 const Admin = () => {
-  const Container = styled.div`
-    height: 100vh;
-    display: flex;
-    ${mobile({ height: "50px" })}
-  `;
+  const Container = styled.div``;
   const Sidebar = styled.div`
     width: 20%;
     background-color: red;
