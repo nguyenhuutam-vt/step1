@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 import "./ContentDashboard.css";
 import ReChart from "./ReChart";
 import { Circle } from "react-circle";
-import CircleBar from "./CircleBar";
+
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { product, progress, top } from "./data";
 import ProgressBar from "@ramonak/react-progress-bar";

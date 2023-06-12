@@ -31,6 +31,7 @@ import menu from "../asset/Menu.png";
 
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import ContentDashboard from "./ContentDashboard";
+import PageAdmin from "./PageAdmin";
 const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -78,7 +79,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-export default function SideBarr() {
+export default function SideBarr({ children }) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -247,9 +248,9 @@ export default function SideBarr() {
           ))}
         </List>
       </Drawer>
-      <Main open={open} style={{ backgroundColor: "#E5E5E5" }}>
+      <Main open={open} style={{ backgroundColor: "#E5E5E5", height: "100%" }}>
         <DrawerHeader />
-        <ContentDashboard />
+        {children}
       </Main>
     </Box>
   );

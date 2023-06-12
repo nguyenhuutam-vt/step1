@@ -23,37 +23,37 @@ export const sidebar = [
 {
     name: 'Product',
     icon :grid,
-    link:'/dashboard'
+    link:'/product'
 },
 {
     name: 'User',
     icon :user,
-    link:'/dashboard'
+    link:'/user'
 },
 {
     name: 'Order',
     icon :order,
-    link:'/dashboard'
+    link:'/order'
 },
 {
     name: 'Shipments',
     icon :transo,
-    link:'/dashboard'
+    link:'/shipments'
 },
 {
     name: 'Transactions',
     icon :credit,
-    link:'/dashboard'
+    link:'/transactions'
 },
 {
     name: 'Settings',
     icon :setting,
-    link:'/dashboard'
+    link:'/settings'
 },
 {
     name: 'Logout',
     icon :logout,
-    link:'/dashboard'
+    link:'/logout'
 },
 ]
 export const product =[ 
